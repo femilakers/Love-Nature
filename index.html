@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Add your background image here */
+      .bg-custom {
+        background-image: url(image/header-hero.jpg);
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+    </style>
+    <title>Love Nature</title>
+  </head>
+  <body>
+    <div class="bg-custom h-screen">
+      <nav
+        class="flex justify-between items-center md:px-16 max-md:px-2 max-md:w-auto max-md:pt-2 pt-0 pb-4 font-[Poppins]"
+      >
+        <div class="flex">
+          <span class="flex justify-center md:justify-start text-sm">
+            <img
+              class=" md:w-[100px] max-md:w-24 h-auto"
+              src="image/logo.png"
+              alt="logo"
+            />
+          </span>
+        </div>
+
+        <span
+          class="text-3xl cursor-pointer ml-60 bg-amber-300 rounded-full p-2 text-neutral-100 mx-[0.5rem] md:hidden flex justify-end"
+          onclick="menu(this)"
+        >
+          <ion-icon name="menu"></ion-icon>
+        </span>
+
+        <div class="flex-grow">
+          <ul
+            class="md:flex justify-end md:items-center pr-10 gap-8 m-0 z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-2 md:pl-0 pl-6 md:opacity-100 opacity-0 transition-all duration-300"
+          >
+            <li>
+              <a class="text-white">Home</a>
+            </li>
+            <li>
+              <a class="text-white">About</a>
+            </li>
+            <li>
+              <a class="text-white">Services</a>
+            </li>
+            <li>
+              <a class="text-white">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Full-Screen Mobile Menu -->
+        <div
+          id="full-screen-menu"
+          class="absolute left-0 top-20 bg-white z-50 w-full hidden flex flex-col p-4 justify-center transition-opacity duration-300 opacity-0"
+        >
+          <ul class="flex flex-col space-y-4">
+            <li>
+              <a class="text-sm mb-2 text-amber-300">Home</a>
+            </li>
+            <li>
+              <a class="text-sm hover:text-lime-600">About</a>
+            </li>
+            <li>
+              <a class="text-sm hover:text-lime-600">Services</a>
+            </li>
+            <li>
+              <a class="text-sm hover:text-lime-600">Contact</a>
+            </li>
+          </ul>
+
+          <span
+            class="absolute -top-[3.5rem] text-neutral-100 right-[2.2rem] text-3xl bg-amber-300 rounded-full p-2 pb-0 cursor-pointer"
+            onclick="menu(this)"
+          >
+            <ion-icon name="close"></ion-icon>
+          </span>
+        </div>
+
+        <div>
+          <button
+            class="hidden md:block hover: text-white border-2 py-2 px-4 rounded w-40"
+            type="button"
+          >
+            202-555-0188
+          </button>
+        </div>
+      </nav>
+
+
+      
+
+      <div class="flex justify-center relative">
+        <div
+          class="text-center absolute md:top-32 max-md:top-0 text-white font-sans tracking-tight"
+        >
+          <div>
+            <h1 class="text-[35px] font-semibold">we all love</h1>
+          </div>
+          <div>
+            <h2 class="text-[100px] mt-[-46px] mb-2 font-sans">nature</h2>
+          </div>
+          <p class="mb-6">
+            Look deep into nature, and you will<br />understand everything
+            better.
+          </p>
+          <div>
+            <button
+              class="bg-yellow-400 text-lime-900 py-2 px-4 w-36 rounded-lg"
+              type="button"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="p-8 max-md:p-2">
+      <div class="text-center">
+        <h2
+          class="py-8 text-4xl text-lime-900 mb-4 font-[Poppins] underline decoration-amber-400 underline-offset-[30px] decoration-4"
+        >
+          Our Services
+        </h2>
+      </div>
+      <div
+        class="flex flex-col md:flex-row items-center justify-around mx-4 md:mx-28 max-md:mx-2 font-[Poppins] my-8"
+      >
+        <article class="p-4 flex flex-col items-center">
+          <a>
+            <img
+              class="rounded mb-4 w-full md:w-[300px] h-auto"
+              src="Image/service-1.jpg"
+              alt="service-1"
+            />
+          </a>
+          <div class="text-center max-md:text-left">
+            <h3 class="text-xl font-bold py-2">Web Design</h3>
+            <p class="text-center max-md:text-left ">
+              Focus on how you can help and benefit your user. Use simple words
+              so that you don't confuse people.
+            </p>
+          </div>
+        </article>
+        <article class="p-4 flex flex-col items-center">
+          <a>
+            <img
+              class="rounded mb-4 w-full md:w-[300px] h-auto"
+              src="Image/service-2.jpg"
+              alt="service-2"
+            />
+          </a>
+          <div class="text-center max-md:text-left">
+            <h3 class="text-xl font-bold py-2">Graphic Design</h3>
+            <p class="text-center max-md:text-left">
+              Focus on how you can help and benefit your user. Use simple words
+              so that you don't confuse people.
+            </p>
+          </div>
+        </article>
+        <article class="p-4 flex flex-col items-center">
+          <a>
+            <img
+              class="rounded mb-4 w-full md:w-[300px] h-auto"
+              src="Image/service-3.jpg"
+              alt="service-3"
+            />
+          </a>
+          <div class="text-center max-md:text-left">
+            <h3 class="text-xl font-bold py-2">Content Creation</h3>
+            <p
+              class="text-center max-md:text-left"
+            >
+              Focus on how you can help and benefit your user. Use simple words
+              so that you don't confuse people.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="p-10 md:p-40 bg-gray-50">
+      <div class="flex items-center justify-center h-full w-full relative">
+        <div
+          class="flex flex-col items-center justify-center relative text-center"
+        >
+          <img
+            class="w-[33px] h-[40px] mb-4"
+            src="Image/quote.png"
+            alt="Quote Icon"
+          />
+          <p
+            class="text-2xl md:text-4xl m-4 md:m-10 text-lime-900 leading-[30px] md:leading-[45px]"
+          >
+            “Original and with an innate understanding of their <br />customer’s
+            needs, the team at Love Nature are <br />always a pleasure to work
+            with.”
+          </p>
+          <div class="flex flex-col items-center mt-4 md:mt-6">
+            <img
+              class="w-[40px] h-[40px] md:w-[50px] md:h-[50px]"
+              src="Image/avatar_on_home.png"
+              alt="Jane Miller Avatar"
+            />
+            <h3 class="mt-2 text-lg md:text-xl">Jane Miller</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col m-0 p-0 font-sans md:pt-20 relative">
+      <div
+        class="flex flex-col md:flex-row justify-between p-4 w-full h-auto relative px-4 md:px-36 py-6 font-serif"
+      >
+        <article class="flex items-center text-left mb-6 md:mb-0 pr-0 md:pr-36">
+          <div class="mr-0 md:mr-36">
+            <h2 class="pb-4 text-lg md:text-3xl text-lime-700">About Us</h2>
+            <h3 class="md:text-4xl text-lime-700 mb-10">
+              Tell website visitors who you are and why they should choose your
+              business.
+            </h3>
+            <p class="text-lg font-sans mb-8 text-lime-800">
+              Because when a visitor first lands on your website, you’re a
+              stranger to them. They have to get to know you in order to want to
+              read your blog posts, subscribe to your email newsletter, or buy
+              what you’re selling.
+            </p>
+            <div>
+              <button
+                class="font-serif text-lime-950 py-2 px-6 rounded border border-black text-sm hover:text-lime-600 hover:bg-lime-100 transition duration-300"
+              >
+                Find Out More
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="flex justify-end h-full w-full">
+          <div class="h-full w-full">
+            <img
+              class="hidden md:block w-full md:w-[600px] h-auto rounded"
+              src="Image/leaf.jpg"
+              alt="leaf"
+            />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="relative overflow-hidden md:rounded-lg bg-cover bg-no-repeat p-12 text-center"
+        style="
+          background-image: url('/Image/footer-hero-big.jpg');
+          height: 400px;
+        "
+      >
+        <div
+          class="absolute bottom-0 left-0 right-0 top-0 h-full w-full max-md:w-[93%] overflow-hidden bg-fixed"
+        >
+          <div class="flex h-full items-center justify-center">
+            <div class="text-white w-[50%] max-md:w-[70%]">
+              <h2 class="mb-8 mb:text-2xl text-5xl text-lime-900 font-semibold">
+                QUESTIONS?
+              </h2>
+              <h4 class="mb-8 md:text-xl text-2xl text-lime-800">
+                Whether you’re curious about features, a free trial, or even
+                press, we’re here to answer any questions.
+              </h4>
+              <button
+                type="button"
+                class="rounded border-2 border px-8 pb-[14px] pt-[14px] bg-amber-300 text-base font-medium leading-normal text-lime-900 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                data-twe-ripple-init
+                data-twe-ripple-color="light"
+              >
+                Let's Talk Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section></section>
+
+    <script>
+        function menu(e) {
+            const fullScreenMenu = document.getElementById('full-screen-menu');
+            const icon = e.querySelector('ion-icon');
+    
+            if (fullScreenMenu.classList.contains('hidden')) {
+                fullScreenMenu.classList.remove('hidden');
+                fullScreenMenu.classList.add('opacity-100');
+                icon.name = "menu";
+            } else {
+                fullScreenMenu.classList.add('hidden');
+                fullScreenMenu.classList.remove('opacity-100');
+                icon.name = "close";
+            }
+        }
+     </script>
+
+  </body>
+</html>

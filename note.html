@@ -1,0 +1,71 @@
+<div class="bg-custom h-screen opacity-300">
+    <nav class="flex justify-between items-center px-16 pt-0 pb-4 font-[Poppins]">
+        <div class="flex">
+            <span class="flex justify-center md:justify-start text-sm">
+                <img class="w-full md:w-[100px] h-auto" src="image/logo.png" alt="logo">
+            </span>
+        </div>
+
+        <span class="text-3xl cursor-pointer mx-2 md:hidden pl-40 justify-end" onclick="menu(this)">
+            <ion-icon name="menu"></ion-icon>
+        </span>
+
+        <!-- Right ul -->
+        <div class="flex-grow">
+            <ul class="md:flex justify-end md:items-center pr-10 gap-8 m-0 z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-2 md:pl-0 pl-6 md:opacity-100 opacity-0 transition-all duration-300">
+                <li>
+                    <a class="text-white ">Home</a>
+                </li>
+                <li>
+                    <a class="text-white ">About</a>
+                </li>
+                <li>
+                    <a class="text-white ">Services</a>
+                </li>
+                <li>
+                    <a class="text-white">Contact</a>
+                </li>
+            </ul>
+        </div> 
+        <!-- Full-Screen Mobile Menu -->
+       <div id="full-screen-menu" class="fixed inset-0 bg-white z-50 hidden flex flex-col items-center justify-center transition-opacity duration-300 opacity-0">
+            <ul class="flex flex-col items-center space-y-4">
+                <li>
+                    <a class="text-2xl text-white ">Home</a>
+                </li>
+                <li>
+                    <a class="text-2xl text-white ">About</a>
+                </li>
+                <li>
+                    <a class="text-white ">Services</a>
+                </li>
+                <li>
+                    <a class="md:text-white text-lime-600 ">Contact</a>
+                </li>
+            </ul>
+            
+            <span class="absolute top-4 right-4 text-3xl cursor-pointer" onclick="menu(this)">
+                <ion-icon name="close"></ion-icon>
+            </span>
+       </div>
+
+        
+
+        <div>
+            <button class="hidden md:block hover: text-white border-2 py-2 px-4 rounded w-40" type="button">202-555-0188</button>
+        </div>
+    </nav>
+   
+
+   
+
+
+    <div class="relative text-center">
+    <h3 class="text-xl font-bold py-2">Content Creation</h3>
+    <p
+      class="text-center absolute md:relative max-md:-top-10 max-md:-left-4 z-50 bg-amber-300"
+    >
+      Focus on how you can help and benefit your user. Use simple words
+      so that you don't confuse people.
+    </p>
+  </div>
